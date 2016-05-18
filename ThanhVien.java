@@ -1,11 +1,11 @@
 import java.util.Scanner;
 public class ThanhVien {
-// Khai báo thuộc tính
+// Khai bao thuoc tinh
 	private int maSo, diemCongHien,thuNhap;
 	private String hoTen, ngaySinh, gioiTinh, chungToc;
 	DuLieu duLieu = new DuLieu();
 	
-//Mã số
+//Ma so
 	public int getMaSo(){
 		return maSo;
 	}
@@ -81,7 +81,7 @@ public class ThanhVien {
 		thuNhap = thunhap;
 	}
 	public String nhapChungToc(){
-		// Bien i là biến để chọn chung toc
+		// bien i l� bien chon chung toc
 			int i;
 			@SuppressWarnings("resource")
 			Scanner scanIn= new Scanner(System.in);
@@ -127,7 +127,7 @@ public class ThanhVien {
 		System.out.println("Nhap gioi tinh: ");
 		setGioiTinh(duLieu.nhapString());
 		System.out.println("Nhap chung toc: ");
-		setGioiTinh(nhapChungToc());
+		setChungToc(nhapChungToc());
 	}
 	
 		
