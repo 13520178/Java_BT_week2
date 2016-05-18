@@ -87,8 +87,6 @@ public class ThanhVien {
 			Scanner scanIn= new Scanner(System.in);
 			do{
 			
-			
-				System.out.println("Nhap chung toc(An so tuong ung)");
 				System.out.print("1- Tinh Linh; 2- Dia Tinh; 3- Nguoi:");
 				try{
 					i= Integer.parseInt(scanIn.nextLine());
@@ -115,18 +113,28 @@ public class ThanhVien {
 			}while(i==0);
 		return chungToc;
 	}
+//	
+	public int thuong(int dch){
+		if(diemCongHien>3000){
+			thuNhap=thuNhap+600;
+			}
+		if(2000<=diemCongHien&&diemCongHien<=3000){
+			thuNhap=thuNhap+300;
+		}
+		return thuNhap;
+	}
 // Ham nhap thong tin thanh vien
 	public void nhap(){
 	
-		System.out.println("Nhap ma so: ");
+		System.out.print("Nhap ma so: ");
 		setMaSo(duLieu.nhapInt());
-		System.out.println("Nhap ho ten: ");
+		System.out.print("Nhap ho ten: ");
 		setHoTen(duLieu.nhapString());
-		System.out.println("Nhap ngay sinh: ");
+		System.out.print("Nhap ngay sinh: ");
 		setNgaySinh(duLieu.nhapString());
-		System.out.println("Nhap gioi tinh: ");
+		System.out.print("Nhap gioi tinh: ");
 		setGioiTinh(duLieu.nhapString());
-		System.out.println("Nhap chung toc: ");
+		System.out.println("Nhap chung toc(An so tuong ung): ");
 		setChungToc(nhapChungToc());
 	}
 	

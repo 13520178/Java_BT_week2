@@ -16,7 +16,7 @@ public class DuLieu {
 				System.out.print("Nhap lai: ");
 			}
 		}while(i==0);
-		// trả về kiểu dữ liệu đã nhập
+		
 		return i;
 	}
 	
@@ -32,7 +32,7 @@ public class DuLieu {
 			}
 			
 		}while(i=="");
-		// Trả về kiểu dữ liệu đã nhập
+		
 		return i;
 	}
 	

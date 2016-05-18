@@ -2,10 +2,10 @@
 public class ThucThi {
 
 	public static void main(String[] args) {
-		ThanhVien a= new ThanhVien();
+		TinhLinh a = new TinhLinh();
 		a.nhap();
 		a.xuat();
-
+		
 	}
 
 }
