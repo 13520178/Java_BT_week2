@@ -5,7 +5,10 @@ public class DiaTinh extends ThanhVien {
 	Scanner scanIn= new Scanner(System.in);
 	DuLieu duLieu = new DuLieu();
 	private String ngheNghiep;
+	private String chungToc = "Dia Tinh";
 	private int dungCuSX, vuKhi, aoGiap, bichNgoc, lamNgoc, hongNgoc, kimCuong; 
+	
+	
 	//Nghe Nghiep
 		public String getNgheNghiep(){
 			return ngheNghiep;
@@ -67,6 +70,7 @@ public class DiaTinh extends ThanhVien {
 		public void setKimCuong(int kc){
 			kimCuong= kc;
 		}
+		
 		
 		public String nhapNgheNghiep(){
 			do{
@@ -136,6 +140,7 @@ public class DiaTinh extends ThanhVien {
 		}
 		public void xuat(){
 			super.xuat();
+			System.out.println("Chung toc: "+chungToc+".");
 			System.out.println("Nghe nghiep: "+ngheNghiep+".");
 			System.out.println("Cong hien: "+getDiemCongHien()+".");
 			System.out.println("Thu nhap: "+getThuNhap()+".");

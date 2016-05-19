@@ -3,6 +3,7 @@ public class TinhLinh extends ThanhVien {
 	private int i; //Bien i là bien chon nghe nghiep
 	DuLieu duLieu = new DuLieu();
 	private String ngheNghiep;
+	private String chungToc = "Tinh linh";
 	private int soCayTrong, linhChi, haThuO, nhanSam, thatTamLien;
 	//Nghe Nghiep
 		public String getNgheNghiep(){
@@ -124,6 +125,7 @@ public class TinhLinh extends ThanhVien {
 		
 		public void xuat(){
 			super.xuat();
+			System.out.println("Chung toc: "+chungToc+".");
 			System.out.println("Nghe nghiep: "+ngheNghiep+".");
 			System.out.println("Cong hien: "+getDiemCongHien()+".");
 			System.out.println("Thu nhap: "+getThuNhap()+".");

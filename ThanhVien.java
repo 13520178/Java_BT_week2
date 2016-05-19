@@ -1,8 +1,8 @@
-import java.util.Scanner;
+
 public class ThanhVien {
 // Khai bao thuoc tinh
 	private int maSo, diemCongHien,thuNhap;
-	private String hoTen, ngaySinh, gioiTinh, chungToc;
+	private String hoTen, ngaySinh, gioiTinh;
 	DuLieu duLieu = new DuLieu();
 	
 //Ma so
@@ -52,19 +52,13 @@ public class ThanhVien {
 		gioiTinh = gt;
 	}
 	
-//Chung toc
-	public String getChungToc(){
-		return chungToc;
-	}
-	public void setChungToc(String ct){
-		chungToc = ct;
-	}
+
 	
 
 	
 // Ham khoi tao
 	public ThanhVien(){
-		hoTen=gioiTinh=ngaySinh=chungToc="";
+		hoTen=gioiTinh=ngaySinh="";
 		maSo = diemCongHien = thuNhap =0;
 	}
 	
@@ -74,45 +68,13 @@ public class ThanhVien {
 		hoTen = hoten;
 		ngaySinh = ngaysinh ;
 		gioiTinh = gioitinh;
-		chungToc = chungtoc;
+		
 		
 		maSo = maso;
 		diemCongHien = diemconghien;
 		thuNhap = thunhap;
 	}
-	public String nhapChungToc(){
-		// bien i là bien chon chung toc
-			int i;
-			@SuppressWarnings("resource")
-			Scanner scanIn= new Scanner(System.in);
-			do{
-			
-				System.out.print("1- Tinh Linh; 2- Dia Tinh; 3- Nguoi:");
-				try{
-					i= Integer.parseInt(scanIn.nextLine());
-					if(i==1){
-						chungToc="Tinh Linh";
-					}
-					else if(i==2){
-						chungToc="Dia Tinh";
-					}
-					else if(i==3){
-						chungToc = "Nguoi";
-					}
-					else{
-						i=0;
-					}
-					
-				}catch(Exception e){
-					i=0;
-				}
-				if(i==0){
-					System.out.println("***NHAP SAI***");
-					System.out.println("Nhap lai:");
-				}
-			}while(i==0);
-		return chungToc;
-	}
+	
 //	
 	public int thuong(int dch){
 		if(diemCongHien>3000){
@@ -134,19 +96,20 @@ public class ThanhVien {
 		setNgaySinh(duLieu.nhapString());
 		System.out.print("Nhap gioi tinh: ");
 		setGioiTinh(duLieu.nhapString());
-		System.out.println("Nhap chung toc(An so tuong ung): ");
-		setChungToc(nhapChungToc());
+		
 	}
 	
 		
 	
 	//Ham xuat thong tin thanh vien
 	public void xuat(){
+		System.out.println("");
+		System.out.println("---------------------");
 		System.out.println("Ma so:" + getMaSo()+".");
 		System.out.println("Ho ten:" + getHoTen()+".");
 		System.out.println("Ngay sinh:" + getNgaySinh()+".");
 		System.out.println("Gioi tinh:" + getGioiTinh()+".");
-		System.out.println("ChungToc:" + getChungToc()+".");
+		
 	}
 	
 		
