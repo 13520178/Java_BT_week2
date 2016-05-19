@@ -2,7 +2,7 @@
 public class ThucThi {
 
 	public static void main(String[] args) {
-		TinhLinh a = new TinhLinh();
+		Nguoi a = new Nguoi();
 		a.nhap();
 		a.xuat();
 		

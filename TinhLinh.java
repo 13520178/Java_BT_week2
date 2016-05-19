@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class TinhLinh extends ThanhVien {
-	int i; //Bien i là bien chon nghe nghiep
+	private int i; //Bien i là bien chon nghe nghiep
 	DuLieu duLieu = new DuLieu();
 	private String ngheNghiep;
 	private int soCayTrong, linhChi, haThuO, nhanSam, thatTamLien;
@@ -44,7 +44,7 @@ public class TinhLinh extends ThanhVien {
 			nhanSam= ns;
 		}	
 		
-		// Thattam lien
+		// That tam lien
 		public int getThatTamLien(){
 			return thatTamLien;
 		}
